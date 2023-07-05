@@ -1,14 +1,16 @@
 import './App.css';
 import Button from './Button'
+import Input from './Input';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCartPlus
+  faCartPlus, faLock, faPhone
 } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
   return (
     <>
+      <p className='comment'> BUTTON COMPONENT</p>
       <p className='comment'> Button in normal form</p>
       <Button children={'Default'} defaultMode/>
       <hr />
@@ -54,6 +56,47 @@ function App() {
       <Button children={'Secondary'} color='secondary' />
       <p className='comment'> Button has danger property</p>
       <Button children={'Danger'} color='danger' />
+
+      <hr />
+      <hr />
+      <hr />
+      <p className='comment'> INPUT COMPONENT</p>
+      <p className='comment'> Input has default property</p>
+      <Input children={"Placeholder"} defaultMode />
+      <hr />
+      <p className='comment'> Input has error property</p>
+      <Input children={"Placeholder"} error />
+      <hr />
+      <p className='comment'> Input has disabled property</p>
+      <Input children={"Disabled"} disabled />
+      <hr />
+      <p className='comment'> Input has helperText property</p>
+      <Input children={"Placeholder"} helperText='Some interesting text' />
+      <hr />
+      <p className='comment'> Input has helperText and error property</p>
+      <Input children={"Placeholder"} helperText='Some interesting text' error />
+
+      <hr />
+      <p className='comment'> Input has startIcon property</p>
+      <Input children={"Placeholder"} startIcon={<FontAwesomeIcon icon={faPhone} />} />
+      <hr />
+      <p className='comment'> Input has endIcon property</p>
+      <Input children={"Placeholder"} endIcon={<FontAwesomeIcon icon={faLock} />}/>
+      <hr />
+      <p className='comment'> Input has value='text' property</p>
+      <Input children={"Text"} value='text' />
+      <hr />
+      <p className='comment'> Input has size='sm' property</p>
+      <Input children={"Placeholder"} size='sm' />
+      <hr />
+      <p className='comment'> Input has size='md' property</p>
+      <Input children={"Placeholder"} size='md' />
+      <hr />
+      <p className='comment'> Input has fullWidth property</p>
+      <Input children={"Text"} fullWidth />
+      <hr />
+      <p className='comment'> Input has multiline row='4' property</p>
+      <Input children={"Placeholder"} multiline row='row-4' />
     </>
   );
 }

@@ -1,0 +1,114 @@
+
+:root {
+    --input-line-height: 20px; /* Giá trị dựa trên yêu cầu của bạn */
+}
+
+.wrapper {
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--gray-3, #828282);
+    margin-left: 10px;
+
+    font-size: 14px;
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    display: flex;
+    padding: 0 12px;
+    margin-bottom: 10px;
+
+    &:focus-visible {
+        outline: none; 
+    }
+
+}
+
+input {
+    border: none;
+    width: 100%;
+    caret-color: #D32F2F; //dấu nháy văn bản
+
+    &:focus-visible {
+        outline: none; 
+    }
+}
+
+.defaultMode {
+    &:hover {
+        border: 1px solid var(--gray-1, #333);
+        cursor: text;
+    }
+
+    &:focus-within {
+        border-color: #2962FF;
+        cursor: text;
+    }
+    
+}
+
+.error {
+    border: 1px solid #D32F2F;
+
+    &:focus{
+        border-color: #D32F2F ;
+        cursor: text;
+    }
+}
+
+.disabled {
+    border: 1px solid var(--gray-5, #E0E0E0);
+    background: var(--gray-6, #F2F2F2);
+    pointer-events: none;
+
+    & input {
+        background: var(--gray-6, #F2F2F2);
+    }
+}
+
+.helperText {
+    &:hover {
+        outline: #828282;
+    }
+}
+
+.startIcon, .endIcon {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 17.964px;
+    height: 17.964px;
+    margin: 10px;
+}
+
+//size
+.sm {
+    width: 200px;
+    height: 40px;
+}
+
+.md {
+    width: 200px;
+    height: 56px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.row-4 {
+    width: 200px;
+    height: 150px;
+    align-items: start;
+    padding: 10px;
+}
+
+
+
+
+  
