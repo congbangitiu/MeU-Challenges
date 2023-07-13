@@ -1,6 +1,7 @@
 import './App.css';
 import Button from './Button'
 import Input from './Input';
+import TodoApp from './TodoApp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCartPlus, faLock, faPhone
@@ -97,6 +98,12 @@ function App() {
       <hr />
       <p className='comment'> Input has multiline row='4' property</p>
       <Input children={"Placeholder"} multiline row='row-4' />
+
+      <hr />
+      <hr />
+      <hr />
+
+      <TodoApp />
     </>
   );
 }
