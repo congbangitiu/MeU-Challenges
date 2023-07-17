@@ -1,0 +1,130 @@
+.wrapper {
+    width: 1000px;
+    margin-left: 200px;
+}
+
+.wrapper h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generator {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.randomIcon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.randomIcon.rotated {
+    animation: rotateAnimation 0.5s forwards;
+}
+
+.quoteContent {
+    width: 750px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    border-left: 8px solid #f7df94;
+    padding-left: 70px;
+    margin-bottom: 90px;
+}
+
+.quoteContent p {
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: 120%;
+    margin: 0;
+    display: flex;
+}
+
+.footer {
+    width: 672px;
+    height: 151px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 40px;
+
+    &:hover {
+        background-color: #333;
+        cursor: pointer;
+    }
+
+    &:hover .name {
+        color: #f2f2f2;
+    }
+
+    &:hover .nextIcon {
+        display: block;
+    }
+}
+
+.author {
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4f4f4f;
+    margin: 3px 0;
+}
+
+.major {
+    color: #828282;
+    margin: 3px 0;
+}
+
+.nextIcon {
+    width: 38px;
+    height: 38px;
+    margin-right: 50px;
+    display: none;
+}
+
+.authorBack {
+    margin-bottom: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.authorQuotesContainer .name {
+    padding-left: 40px;
+    font-size: 36px;
+}
+
+.backIcon {
+    width: 38px;
+    height: 38px;
+    margin-right: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCartPlus, faLock, faPhone
 } from '@fortawesome/free-solid-svg-icons';
+import QuoteGeneratorApp from './QuoteGeneratorApp/QuoteGeneratorApp';
 
 
 function App() {
@@ -104,6 +105,18 @@ function App() {
       <hr />
 
       <TodoApp />
+
+      <hr />
+      <hr />
+      <hr />
+
+      <QuoteGeneratorApp />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
